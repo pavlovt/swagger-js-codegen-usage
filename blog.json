@@ -1,0 +1,67 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "my blog",
+    "contact": {}
+  },
+  "host": "localhost:1337",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/posts": {
+      "get": {
+        "summary": "posts",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "posts",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/tags": {
+      "get": {
+        "summary": "tags",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "tags",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
